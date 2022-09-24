@@ -30,6 +30,16 @@ body {
   top: 0;
   width: 100%;
 }
+
+.header-container {
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
 .container {
   max-width: 130rem;
   margin-left: auto;
@@ -87,19 +97,13 @@ body {
 /* HEADER */
 
 .header {
-  /* display: flex;
-  padding: 0 4.8rem; */
   width: 100%;
-  padding: 0 auto 0 auto;
-  background-color: #fff;
+  background-color: white;
   height: 9.6rem;
-  align-items: center;
-  justify-content: space-between;
   position: sticky;
   display: flex;
   top: 0;
   left: 0;
-  z-index: 9999%;
 }
 
 .logo {
