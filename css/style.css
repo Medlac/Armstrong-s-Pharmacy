@@ -47,9 +47,9 @@ body {
 }
 
 .heading-primary {
-  font-size: 5.2rem;
+  font-size: 6.2rem;
   line-height: 1.05;
-  margin-bottom: 3.2rem;
+  margin-bottom: 6.4rem;
   letter-spacing: 1px;
 }
 
@@ -94,6 +94,35 @@ body {
   transition: all 0.3s;
 }
 
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #84c3b0;
+  font-weight: 600;
+}
+
+.btn--outline:active,
+.btn--outline:hover {
+  background-color: transparent;
+  /* trick to get border inside and not cause movement */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #84c3b0;
+  color: #333;
+  font-weight: 600;
+}
+
+.btn--full:active,
+.btn--full:hover {
+  background-color: #4f756a;
+}
+
+.margin-right {
+  margin-right: 1.6rem !important;
+}
 /* HEADER */
 
 .header {
