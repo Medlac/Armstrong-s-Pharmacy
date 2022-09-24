@@ -1,0 +1,172 @@
+/* COLOURS
+
+MAIN COLOR: #84C3B0
+
+
+
+*/
+
+/* GENERAL/REUSABLE CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.container {
+  max-width: 130rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  letter-spacing: 1px;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+  /* margin-bottom: 9.6rem; */
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  transition: all 0.3s;
+}
+
+/* HEADER */
+
+.header {
+  /* display: flex;
+  padding: 0 4.8rem; */
+  width: 100%;
+  padding: 0 auto 0 auto;
+  background-color: #fff;
+  height: 9.6rem;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: 9999%;
+}
+
+.logo {
+  height: 7.4rem;
+  /* width: 30rem; */
+  /* justify-self: center; */
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  text-transform: capitalize;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #84c3b0;
+  transition: color 0.3s;
+}
+
+.main-nav-link.nav-contact-us:link,
+.main-nav-link.nav-contact-us:visited {
+  padding: 1.2rem 2.4rem;
+  background-color: #84c3b0;
+  border-radius: 11px;
+  transition: 0.3s;
+}
+
+.main-nav-link.nav-contact-us:hover,
+.main-nav-link.nav-contact-us:active {
+  background-color: #6a9c8d;
+  color: #333;
+}
+
+/* WELCOME SECTION */
+
+.section-welcome {
+  background-image: linear-gradient(
+      rgba(37, 34, 34, 0.8),
+      rgba(37, 35, 35, 0.8)
+    ),
+    url(../img/armstrongs-pharmacy.jpeg);
+  width: 100%;
+  height: 60rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  color: #fff;
+  padding: 9.6rem 0 9.6rem 0;
+}
+
+.welcome {
+  /* max-width: 146rem;
+  margin-left: auto;
+  margin-right: auto; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+}
