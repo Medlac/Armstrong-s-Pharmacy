@@ -239,3 +239,10 @@ body {
 .email-text {
   font-size: 2rem;
 }
+
+.facebook-link:active,
+.facebook-link:hover,
+.facebook-link:link,
+.facebook-link:visited {
+  color: #fff;
+}
