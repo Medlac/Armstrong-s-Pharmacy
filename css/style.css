@@ -114,6 +114,28 @@ body {
 .margin--right {
   margin-right: 1.6rem !important;
 }
+
+/* TOP-BANNER */
+
+.top-banner {
+  display: flex;
+  gap: 2rem;
+  height: 5rem;
+  background-color: #333;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 0 auto 0 auto;
+}
+
+.time-icon {
+  font-size: 3.2rem;
+}
+
+.opening-hours {
+  font-size: 1.6rem;
+}
+
 /* HEADER */
 
 .header {
