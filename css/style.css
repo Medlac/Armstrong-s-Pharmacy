@@ -48,7 +48,7 @@ body {
   font-size: 4.4rem;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 4.2rem;
+  /* margin-bottom: 4.2rem; */
 }
 
 .heading-tertiary {
@@ -72,6 +72,9 @@ body {
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .btn,
@@ -113,6 +116,10 @@ body {
 
 .margin--right {
   margin-right: 1.6rem !important;
+}
+
+.line-break {
+  width: 25%;
 }
 
 /* TOP-BANNER */
@@ -286,12 +293,14 @@ body {
 .about-us-section {
   align-items: center;
   justify-content: center;
+  margin-bottom: 9.6rem;
 }
 
 .about-us-content {
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 3.6rem;
+  margin-top: 3.6rem;
 }
 
 .norman-armstrong-img {
@@ -305,9 +314,38 @@ body {
   transition: 0.3s;
   outline: #84c3b0 solid 1rem;
   border-radius: 11px;
+  overflow: hidden;
 }
 
 .norman-armstrong:hover {
   transform: scale(105%);
   transition: 0.3s;
+}
+
+/* FOOTER */
+
+.footer-section {
+  background-color: #333;
+  color: #fff;
+  height: 30rem;
+  padding-top: 3.6rem;
+}
+
+.footer-heading {
+  text-transform: uppercase;
+  border-bottom: solid 1px;
+  padding-bottom: 1rem;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  /* margin-bottom: 1rem; */
+  /* margin-top: 1rem; */
 }
