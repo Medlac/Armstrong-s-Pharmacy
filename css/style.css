@@ -327,14 +327,18 @@ body {
 .footer-section {
   background-color: #333;
   color: #fff;
-  height: 30rem;
-  padding-top: 3.6rem;
+  height: 100%;
+  padding: 4.8rem 0 4.8rem 0;
 }
 
 .footer-heading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
   text-transform: uppercase;
-  border-bottom: solid 1px;
+  border-bottom: solid 0.1rem;
   padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer-list {
@@ -348,4 +352,19 @@ body {
   font-size: 2rem;
   /* margin-bottom: 1rem; */
   /* margin-top: 1rem; */
+}
+
+.opening-hours {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.opening-hours-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #fff solid 0.1rem;
+  padding: 1rem 0 1rem 0;
+  font-size: 2rem;
 }
