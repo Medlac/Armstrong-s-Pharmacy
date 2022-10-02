@@ -29,14 +29,18 @@
 
     <header class="header">
       <div class="header-container">
-        <img src="img/logo-v1-2022.png" class="logo" alt="armstrong's logo" />
+        <a href="index.html">
+          <img src="img/logo-v1-2022.png" class="logo" alt="armstrong's logo"
+        /></a>
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li><a class="main-nav-link" href="#">placeholder</a></li>
             <li><a class="main-nav-link" href="#">placeholder</a></li>
             <li><a class="main-nav-link" href="#">placeholder</a></li>
             <li>
-              <a class="main-nav-link nav-contact-us" href="#">contact us</a>
+              <a class="main-nav-link nav-contact-us" href="contact.html"
+                >contact us</a
+              >
             </li>
           </ul>
         </nav>
@@ -51,8 +55,10 @@
             <h1 class="heading-primary">
               Serving the city of Sheffield since 1957
             </h1>
-            <a class="btn btn--outline margin--right" href="#">Our Services</a>
-            <a class="btn btn--full" href="#">Contact Us</a>
+            <a class="btn btn--outline margin--right" href="services.html"
+              >Our Services</a
+            >
+            <a class="btn btn--full" href="contact.html">Contact Us</a>
           </div>
           <div>
             <iframe
@@ -71,28 +77,105 @@
       <div class="contact-block container">
         <div class="details-block">
           <div class="block-icon">
-            <ion-icon name="call-outline"></ion-icon>
+            <a href="tel:01142654306" class="contact-link"
+              ><ion-icon name="call-outline"></ion-icon
+            ></a>
           </div>
-          <div class="block-content">0114 265 4306</div>
+          <!-- <div class="block-content">0114 265 4306</div> -->
+          <a href="tel:01142654306" class="block-content phone-link"
+            >0114 265 4306</a
+          >
         </div>
         <div class="details-block">
-          <div class="block-icon"><ion-icon name="at-outline"></ion-icon></div>
+          <div class="block-icon">
+            <a href="mailto:admin@armstrongspharmacy.co.uk" class="contact-link"
+              ><ion-icon name="at-outline"></ion-icon
+            ></a>
+          </div>
           <div class="block-content email-text">
-            admin@armstrongspharmacy.co.uk
+            <a
+              href="mailto:admin@armstrongspharmacy.co.uk"
+              class="contact-link"
+            >
+              admin@armstrongspharmacy.co.uk</a
+            >
           </div>
         </div>
         <div class="details-block">
           <div class="block-icon">
             <a
-              class="facebook-link"
+              class="contact-link"
               href="https://www.facebook.com/armstrongspharmacy"
             >
               <ion-icon name="logo-facebook"></ion-icon
             ></a>
           </div>
-          <div class="block-content">Armstrong's Pharmacy</div>
+          <div class="block-content">
+            <a
+              class="contact-link"
+              href="https://www.facebook.com/armstrongspharmacy"
+              >Armstrong's Pharmacy</a
+            >
+          </div>
         </div>
       </div>
+
+      <section class="about-us-section container grid grid--2-cols">
+        <div class="about-us">
+          <h2 class="heading-secondary">About Us</h2>
+
+          <p class="about-us-content">
+            Armstrong's Pharmacy is a family-run business established in 1957 by
+            Norman Armstrong. The pharmacy has spanned across four generations
+            of Armstrong's serving the Gleadless area since opening.
+          </p>
+
+          <p class="about-us-content">
+            We dispense both NHS and private prescriptions, we accept electronic
+            prescriptions from any surgery and provide free delivery. We also
+            provide NHS services such as; Flu Vaccination Service, Minor
+            Ailments, New Medicines Service, and Medicine Use Reviews.
+          </p>
+          <a class="btn btn--full" href="services.html">Explore Our Services</a>
+        </div>
+
+        <div class="norman-armstrong-img">
+          <img
+            src="img/norman-a.jpg"
+            class="norman-armstrong"
+            alt="Norman Armstrong"
+          />
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="container grid grid--3-cols">
+          <div class="footer-content">
+            <span class="subheading footer-heading">Contact</span>
+
+            <ul class="footer-list">
+              <li class="list-item">
+                <span><ion-icon name="home-sharp"></ion-icon></span>
+                <span>867-869 Gleadless Road, Sheffield, S12 2LG</span>
+              </li>
+              <li class="list-item">
+                <span><ion-icon name="call-sharp"></ion-icon></span
+                ><span>0114 2654306</span>
+              </li>
+              <li class="list-item">
+                <span><ion-icon name="at-sharp"></ion-icon></span>
+                <span>admin@armstrongspharmacy.co.uk</span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-content">
+            <span class="subheading footer-heading">Company Information</span>
+          </div>
+          <div class="footer-content">
+            <span class="subheading footer-heading">Opening Hours</span>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script
@@ -104,21 +187,4 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
-
-  <!-- <script>
-    window.onscroll = function () {
-      myFunction();
-    };
-
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-  </script> -->
 </html>
