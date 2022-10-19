@@ -50,74 +50,93 @@
         </nav>
       </div>
     </header>
-
     <main>
       <section class="sub-page-title">
-        <span class="subheading">Services</span>
-        <h3>Our Range of Services:</h3>
+        <span class="subheading">Prescriptions</span>
+        <h3>Prescription Dispensing</h3>
       </section>
 
-      <section class="service-cards grid grid--3-cols container">
-        <div class="service-card">
-          <img src="img/injection.jpg" />
-          <div class="service-desc">
-            <h4 class="service-title">Flu Vaccinations</h4>
-            <p>We provide both NHS and private flu vaccinations.</p>
-            <p>Both appointments and drop-in services available.</p>
-            <a class="btn btn--full" href="#">Learn More &rarr;</a>
-          </div>
+      <section class="prescriptions-page container grid prescriptions-grid">
+        <div class="prescriptions-info">
+          <h3 class="heading-tertiary">Prescriptions</h3>
+          <p class="prescription-desc">
+            Here at Armstrong's Pharmacy, dispensing prescriptions is at the
+            centre of our pharmacy business. We pride ourselves on providing a
+            quick, efficient and convenient prescription service. We also to
+            endeavour to do eveything in our power to get you the medication you
+            are prescribed or to fulfil any preference you may have regarding
+            your medicines.
+          </p>
+          <h3 class="heading-tertiary">
+            How to Register to our Prescription Service
+          </h3>
+          <p class="prescription-desc">
+            To arrange for your prescriptions to be electronically sent to us,
+            submit your details to us via the 'Nomination Form'. Alternatively
+            you can ring us, or nominate us using the NHS app.
+          </p>
+          <h3 class="heading-tertiary">Prescription Ordering</h3>
+          <p class="prescription-desc">
+            phone , email , nhs app (links to app store), surgery app, To
+            arrange your re-order, contact us via telephone, instore or using
+            the NHS app. Using the NHS app is another way to communicate with
+            Armstrong's Pharmacy and organise your medication better.
+          </p>
         </div>
-        <div class="service-card">
-          <img src="img/covid-test.jpg" />
-          <div class="service-desc">
-            <h4 class="service-title">COVID Testing</h4>
-            <p>Personal Lateral Flow tests available for purchase.</p>
-            <p>Pre-Depature Fit-to-Fly tests also available.</p>
 
-            <a class="btn btn--full" href="#">Learn More &rarr;</a>
-          </div>
-        </div>
-        <div class="service-card">
-          <img src="img/pharmacy-advice.jpeg" />
-          <div class="service-desc">
-            <h4 class="service-title">Health Advice</h4>
-            <p>We have been offering advice to our community since 1957.</p>
-            <p>Our pharmacists can assist with a range of conditions.</p>
-            <a class="btn btn--full" href="#">Learn More &rarr;</a>
-          </div>
-        </div>
-        <div class="service-card">
-          <img src="img/blue-pill.jpg" />
-          <div class="service-desc">
-            <h4 class="service-title">Erectile Dysfunction</h4>
-            <p>Erectile Dysfunction treatment is available at Armstrong's</p>
-            <p>Read more about how our pharmacists can help.</p>
-            <a class="btn btn--full" href="#">Learn More &rarr;</a>
-          </div>
-        </div>
-        <div class="service-card">
-          <img src="img/rx-delivery.jpeg" />
-          <div class="service-desc">
-            <h4 class="service-title">Prescription Delivery</h4>
-            <p>We offer a delivery service to patients in our local area.</p>
-            <p>
-              This service is available free to those who are housebound or
-              elderly.
-            </p>
-            <a class="btn btn--full" href="#">Learn More &rarr;</a>
-          </div>
-        </div>
-        <div class="service-card">
-          <img src="img/rx-handout.jpg" />
-          <div class="service-desc">
-            <h4 class="service-title">Minor Ailments Service</h4>
-            <p>
-              There are a range of conditions that can be treated in the
-              pharmacy without seeing a GP.
-            </p>
-            <p>It may be free if you are exempt from prescription charges.</p>
-            <a class="btn btn--full" href="#">Learn More &rarr;</a>
-          </div>
+        <div class="nomination-form">
+          <h3 class="heading-tertiary form-title">Nomination Form</h3>
+          <form action="nomination.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your first name"
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name"
+            />
+
+            <label for="dob">Date of Birth</label>
+            <input
+              type="text"
+              id="dateob"
+              name="dob"
+              placeholder="DD-MM-YYYY"
+            />
+
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="e.g. 123 Queen Road"
+            />
+
+            <label for="postcode">Postcode</label>
+            <input
+              type="text"
+              id="postcode"
+              name="postcode"
+              placeholder="e.g. N1 1SW"
+            />
+
+            <span class="checkbox">
+              <input id="cb" type="checkbox" name="checkbox" />
+              <label id="checkbox-text"
+                >I want my electronic prescriptions to be sent to Armstrong's
+                Pharmacy.</label
+              >
+            </span>
+
+            <input type="submit" value="Submit" />
+          </form>
         </div>
       </section>
     </main>
