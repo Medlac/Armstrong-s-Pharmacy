@@ -496,9 +496,20 @@ body {
 }
 
 .prescription-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.prescription-desc p {
   font-size: 1.6rem;
-  line-height: 1.8;
+  line-height: 1.6;
   margin-bottom: 4.8rem;
+}
+
+#last-p {
+  margin-bottom: 0;
 }
 
 .form-title {
@@ -513,6 +524,8 @@ body {
   border-radius: 11px;
   box-shadow: 0rem 2.2rem 2.2rem rgba(0, 0, 0, 0.2);
   position: relative;
+  height: 60rem;
+  position: sticky;
 }
 
 .nomination-form form {
@@ -522,7 +535,7 @@ body {
   font-weight: 500;
   color: #fff;
   padding: 0 3rem;
-  height: 50rem;
+  /* height: 50rem; */
 }
 
 .nomination-form label {
@@ -569,4 +582,29 @@ body {
 .nomination-form input[type="submit"]:hover {
   box-shadow: 0 0 2.2rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+.prescriptions-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prescriptions-img img {
+  height: 30rem;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.store-imgs {
+  display: flex;
+  align-items: center;
+}
+
+#apple-logo {
+  width: 14rem;
+}
+
+#google-logo {
+  width: 17.5rem;
 }
