@@ -520,12 +520,16 @@ body {
 }
 
 .nomination-form {
-  background-color: #84c3b0;
+  background-image: linear-gradient(to bottom right, #6a9c8d, #84c3b0, #b5dbd0);
   border-radius: 11px;
   box-shadow: 0rem 2.2rem 2.2rem rgba(0, 0, 0, 0.2);
   position: relative;
   height: 60rem;
-  position: sticky;
+}
+
+.nomination-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(250, 229, 211, 0.5);
 }
 
 .nomination-form form {
@@ -573,7 +577,7 @@ body {
   right: 0;
   bottom: 4rem;
   text-align: center;
-  transition: all 0.5s ease;
+
   color: #4f756a;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -607,4 +611,131 @@ body {
 
 #google-logo {
   width: 17.5rem;
+}
+
+/* CONTACT PAGE */
+
+.contact-headings {
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  margin-bottom: 9.6rem;
+}
+
+.contact-info {
+  font-size: 2rem;
+  line-height: 1.2;
+  width: 20rem;
+}
+
+.contact-info span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  color: #6a9c8d;
+  font-weight: 500;
+}
+
+.contact-info a:active,
+.contact-info a:hover,
+.contact-info a:visited,
+.contact-info a:link {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: #666;
+}
+
+#icon {
+  font-size: 3rem;
+}
+
+.google-map-section {
+  display: flex;
+  justify-content: center;
+}
+
+.google-map {
+  width: 75%;
+  height: 30rem;
+  margin-bottom: 9.6rem;
+}
+
+.location {
+  text-align: center;
+  margin-bottom: 2.4rem;
+  font-size: 1.8rem;
+}
+
+.get-in-touch {
+  background-image: linear-gradient(to bottom right, #6a9c8d, #84c3b0, #b5dbd0);
+  border-radius: 11px;
+  padding: 5rem 5rem;
+  width: 50%;
+  box-shadow: 0rem 2.2rem 2.2rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 9.8rem;
+  position: relative;
+}
+
+.git-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
+}
+
+.git-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 6rem;
+}
+
+.git-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.git-form input {
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.git-form textarea {
+  height: 10rem;
+  border: none;
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.git-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(250, 229, 211, 0.5);
+}
+
+#git-submit {
+  position: absolute;
+  left: 14rem;
+  color: #4f756a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  bottom: 6rem;
+  width: 10rem;
+}
+
+#git-submit:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
