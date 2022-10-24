@@ -681,7 +681,6 @@ body {
   width: 50%;
   box-shadow: 0rem 2.2rem 2.2rem rgba(0, 0, 0, 0.2);
   margin-bottom: 9.8rem;
-  position: relative;
 }
 
 .git-text {
@@ -720,22 +719,32 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+.message {
+  grid-column: 2;
+  grid-row: 2 / span 2;
+}
+
 .git-form *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(250, 229, 211, 0.5);
 }
 
 #git-submit {
-  position: absolute;
-  left: 14rem;
   color: #4f756a;
   font-weight: 600;
   transition: all 0.3s ease;
-  bottom: 6rem;
   width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #git-submit:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+.form-submit {
+  display: flex;
+  justify-content: center;
 }
