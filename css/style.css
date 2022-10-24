@@ -123,6 +123,22 @@ body {
   width: 25%;
 }
 
+.sub-page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4.8rem 0 4.8rem 0;
+  color: #fff;
+  background-color: #84c3b0;
+  margin-bottom: 4.8rem;
+}
+
+.sub-page-title h3 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
 /* TOP-BANNER */
 
 .top-banner {
@@ -430,22 +446,6 @@ body {
 /* NEW PAGE */
 /* SERVICES PAGE */
 
-.services-page-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4.8rem 0 4.8rem 0;
-  color: #fff;
-  background-color: #84c3b0;
-  margin-bottom: 4.8rem;
-}
-
-.services-page-title h3 {
-  font-size: 3rem;
-  line-height: 1.2;
-}
-
 .service-cards {
   padding-bottom: 9.6rem;
 }
@@ -482,4 +482,260 @@ body {
 .service-desc p {
   margin-bottom: 2rem;
   font-size: 1.8rem;
+}
+
+/* PRESCRIPTIONS PAGE */
+
+.prescriptions-page {
+  margin-bottom: 9.8rem;
+}
+
+.prescriptions-grid {
+  display: grid;
+  grid-template-columns: 70fr 30fr;
+}
+
+.prescription-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.prescription-desc p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+#last-p {
+  margin-bottom: 0;
+}
+
+.form-title {
+  text-align: center;
+  margin-top: 3rem;
+  color: #fff;
+  margin-bottom: 0 !important;
+}
+
+.nomination-form {
+  background-image: linear-gradient(to bottom right, #6a9c8d, #84c3b0, #b5dbd0);
+  border-radius: 11px;
+  box-shadow: 0rem 2.2rem 2.2rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  height: 60rem;
+}
+
+.nomination-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(250, 229, 211, 0.5);
+}
+
+.nomination-form form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 3rem;
+  /* height: 50rem; */
+}
+
+.nomination-form label {
+  padding: 2rem 0 0.8rem 0;
+}
+
+.nomination-form input[type="text"] {
+  border: none;
+  border-radius: 3px;
+  height: 3rem;
+  text-indent: 10px;
+}
+
+.checkbox {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#checkbox-text {
+  font-size: 1.2rem;
+}
+
+.nomination-form input[type="submit"] {
+  background-color: #fff;
+  border: none;
+  border-radius: 11px;
+  padding: 1.6rem 2.4rem;
+  width: 12rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 4rem;
+  text-align: center;
+
+  color: #4f756a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nomination-form input[type="submit"]:hover {
+  box-shadow: 0 0 2.2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.prescriptions-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prescriptions-img img {
+  height: 30rem;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.store-imgs {
+  display: flex;
+  align-items: center;
+}
+
+#apple-logo {
+  width: 14rem;
+}
+
+#google-logo {
+  width: 17.5rem;
+}
+
+/* CONTACT PAGE */
+
+.contact-headings {
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  margin-bottom: 9.6rem;
+}
+
+.contact-info {
+  font-size: 2rem;
+  line-height: 1.2;
+  width: 20rem;
+}
+
+.contact-info span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  color: #6a9c8d;
+  font-weight: 500;
+}
+
+.contact-info a:active,
+.contact-info a:hover,
+.contact-info a:visited,
+.contact-info a:link {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: #666;
+}
+
+#icon {
+  font-size: 3rem;
+}
+
+.google-map-section {
+  display: flex;
+  justify-content: center;
+}
+
+.google-map {
+  width: 75%;
+  height: 30rem;
+  margin-bottom: 9.6rem;
+}
+
+.location {
+  text-align: center;
+  margin-bottom: 2.4rem;
+  font-size: 1.8rem;
+}
+
+.get-in-touch {
+  background-image: linear-gradient(to bottom right, #6a9c8d, #84c3b0, #b5dbd0);
+  border-radius: 11px;
+  padding: 5rem 5rem;
+  width: 50%;
+  box-shadow: 0rem 2.2rem 2.2rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 9.8rem;
+  position: relative;
+}
+
+.git-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
+}
+
+.git-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 6rem;
+}
+
+.git-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.git-form input {
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.git-form textarea {
+  height: 10rem;
+  border: none;
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.git-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(250, 229, 211, 0.5);
+}
+
+#git-submit {
+  position: absolute;
+  left: 14rem;
+  color: #4f756a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  bottom: 6rem;
+  width: 10rem;
+}
+
+#git-submit:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
