@@ -1,0 +1,30 @@
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 47em) {
+  html {
+    font-size: 45%;
+  }
+
+  .details-block {
+    width: 33rem;
+    height: 16rem;
+  }
+
+  .block-content {
+    font-size: 1.6rem;
+  }
+
+  .block-icon {
+    font-size: 4rem;
+  }
+
+  .footer-small {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 5rem;
+  }
+}
