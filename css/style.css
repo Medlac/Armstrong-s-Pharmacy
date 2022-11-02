@@ -16,6 +16,7 @@ SHADES: #6a9c8d #4f756a
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 .sticky {
@@ -224,6 +226,28 @@ body {
 .main-nav-link.nav-contact-us:active {
   background-color: #6a9c8d;
   color: #333;
+}
+
+/* MOBILE NAV */
+
+.btn-mobile-nav {
+  display: block;
+  border: none;
+  cursor: pointer;
+  display: none;
+  background-color: #84c3b0;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.icon-mobile-nav {
+  height: 4rem;
+  width: 4rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* WELCOME SECTION */
