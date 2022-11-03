@@ -357,7 +357,7 @@ body {
 .norman-armstrong {
   height: 46rem;
   transition: 0.3s;
-  outline: #84c3b0 solid 1rem;
+  border: #84c3b0 solid 1rem;
   border-radius: 11px;
   overflow: hidden;
 }

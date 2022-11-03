@@ -51,7 +51,11 @@
 
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 9.8rem;
+    padding-bottom: 6.6rem;
+  }
+
+  .services-grid {
+    text-align: center;
   }
 
   .btn-mobile-nav {
