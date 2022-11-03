@@ -36,7 +36,7 @@
     font-size: 4rem;
   }
 
-  .footer-small {
+  .footer-mobile {
     display: flex;
     flex-direction: column;
     margin: 5rem 5rem;
@@ -109,5 +109,39 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 2.4rem;
+  }
+
+  /* SERVICES PAGE */
+
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* PRESCRIPTIONS PAGE */
+
+  .prescriptions-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nomination-form form {
+    padding: 0 8rem;
+  }
+
+  /* CONTACT PAGE */
+
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .google-map {
+    width: 90%;
+    height: 40rem;
+  }
+
+  .get-in-touch {
+    width: auto;
   }
 }
