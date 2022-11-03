@@ -132,7 +132,7 @@
 
   .service-cards {
     grid-template-columns: repeat(1, 1fr);
-    margin: 0 10rem;
+    margin: 0 6rem;
   }
 
   /* PRESCRIPTIONS PAGE */
