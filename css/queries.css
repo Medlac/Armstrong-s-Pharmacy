@@ -11,15 +11,17 @@
 
 @media (max-width: 47em) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
 
   .contact-block {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     max-width: 100%;
     background-color: #84c3b0;
-    transform: translate(0, -50%);
+    transform: translate(0, -15%);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
   }
 
@@ -52,9 +54,18 @@
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 6.6rem;
+    gap: 2rem;
+  }
+
+  .gallery-item {
+    border-radius: 11px;
   }
 
   .services-grid {
+    text-align: center;
+  }
+
+  .testimonial-section {
     text-align: center;
   }
 
@@ -114,7 +125,8 @@
   /* SERVICES PAGE */
 
   .service-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 10rem;
   }
 
   /* PRESCRIPTIONS PAGE */
@@ -125,7 +137,7 @@
   }
 
   .nomination-form form {
-    padding: 0 8rem;
+    padding: 0 5rem;
   }
 
   /* CONTACT PAGE */
