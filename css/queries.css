@@ -14,9 +14,18 @@
     font-size: 45%;
   }
 
+  .contact-block {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    background-color: #84c3b0;
+    transform: translate(0, -50%);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  }
+
   .details-block {
-    width: 33rem;
-    height: 16rem;
+    box-shadow: none;
+    transform: none;
   }
 
   .block-content {
@@ -38,6 +47,11 @@
     flex-direction: column;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 9.8rem;
   }
 
   .btn-mobile-nav {

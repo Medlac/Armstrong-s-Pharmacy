@@ -286,7 +286,7 @@ body {
 
 .contact-block {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .details-block {
@@ -379,6 +379,7 @@ body {
 
 .gallery-grid {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .service-content {
