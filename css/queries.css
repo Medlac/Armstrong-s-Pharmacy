@@ -14,6 +14,65 @@
     font-size: 50%;
   }
 
+  .header-container {
+    width: 90%;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 100;
+    /* margin-right: 2rem; */
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100vh;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: rgba(255, 255, 255, 0.97);
+    display: flex;
+    justify-content: center;
+    padding-top: 14rem;
+    transition: all 0.5s;
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) make it unaccesible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it to screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.4rem;
+  }
+
   .contact-block {
     display: flex;
     flex-direction: column;
@@ -67,59 +126,6 @@
 
   .testimonial-section {
     text-align: center;
-  }
-
-  .btn-mobile-nav {
-    display: block;
-  }
-
-  .main-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    height: 80vh;
-    width: 100%;
-    transform: translateX(100%);
-    background-color: rgba(255, 255, 255, 0.97);
-    display: flex;
-    justify-content: center;
-    padding-top: 14rem;
-    transition: all 0.5s;
-
-    /* 1) Hide it visually */
-    opacity: 0;
-
-    /* 2) make it unaccesible to mouse and keyboard */
-    pointer-events: none;
-
-    /* 3) Hide it to screen readers */
-    visibility: hidden;
-  }
-
-  .nav-open .main-nav {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transform: translateX(0);
-  }
-
-  .nav-open .icon-mobile-nav[name="close-outline"] {
-    display: block;
-  }
-
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
-    display: none;
-  }
-
-  .main-nav-list {
-    flex-direction: column;
-    gap: 6.4rem;
-  }
-
-  .main-nav-link:link,
-  .main-nav-link:visited {
-    font-size: 2.4rem;
   }
 
   /* SERVICES PAGE */
