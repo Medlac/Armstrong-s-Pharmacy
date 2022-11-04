@@ -12,7 +12,7 @@
 @media (max-width: 47em) {
   html {
     font-size: 50%;
-    overflow: hidden;
+    overflow: clip;
   }
 
   .header {
