@@ -125,22 +125,22 @@
             If you have any queries or want to get in contact for any reason,
             please leave us a message!
           </p>
-          <form class="git-form">
+          <form class="git-form" name="get-in-touch-form" netlify>
             <div>
               <label>Full Name</label>
-              <input required type="text" placeholder="John Smith" ></input>
+              <input required type="text" placeholder="John Smith" name="full-name" ></input>
             </div>
             <div>
               <label>Subject</label>
-              <input required type="text" placeholder="Subject" ></input>
+              <input required type="text" placeholder="Subject" name="subject" ></input>
             </div>
             <div>
               <label>Email</label>
-              <input required type="text" placeholder="johnsmith@gmail.com" ></input>
+              <input required type="text" placeholder="johnsmith@gmail.com" name="email" ></input>
             </div>
             <div class="message">
               <label>Message</label>
-              <textarea required type="text" id="message" placeholder="Your Message" ></textarea>
+              <textarea required type="text" id="message" placeholder="Your Message" name="message" ></textarea>
             </div>
            <div class="form-submit"> <input type="submit" id="git-submit" value="Submit" /></div>
           </form>
