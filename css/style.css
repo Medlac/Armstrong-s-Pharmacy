@@ -16,7 +16,7 @@ SHADES: #6a9c8d #4f756a
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
